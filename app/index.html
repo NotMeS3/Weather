@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"No" To Weather | bzz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Почта</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Спорт</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Авто</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#"></a>
+                        </li>
+                    </ul>
+                    <div class="header__user">
+                        <a href="#" class="header__user-link">
+                            
+                        </a>
+                        <a href="#" class="header__user-exit">Выход</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="search">
+                <div class="container">
+                    <div class="search__inner">
+                        <a class="logo-link" href="#" >
+                            <img src="" alt="">
+                        </a>
+                        <form class="search__form">
+                            <input class="search__form-input" type="text" placeholder="Поиск по интернету">
+                            <button class="search__form-btn" type="submit">
+                                <svg class="search__form-img" width="21" height="20">
+                                    <path fill="#FFF" fill-rule="evenodd" d="M0 20V0m21 0v20m-2.964-3.884l-2.865-2.727c1.269-1.498 1.906-3.5 1.514-5.644-.514-2.806-2.865-5.089-5.804-5.616C5.71 1.2 1.26 5.437 2.235 10.363c.554 2.799 2.951 5.038 5.897 5.527 2.251.374 4.354-.233 5.926-1.441l2.864 2.728a.544.544 0 00.742 0l.372-.354a.483.483 0 000-.707M9.45 3.5c3.185 0 5.775 2.467 5.775 5.5s-2.59 5.5-5.775 5.5c-3.185 0-5.775-2.467-5.775-5.5s2.59-5.5 5.775-5.5"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <div class="container">
+                    <div class="weather__inner">
+                        <div class="weather__city">
+                            <div class="weather__city-title"></div>
+                            <div class="weather__day"></div>
+                            <div class="weather__description">
+                                <div class="weather__sdelau"></div>
+                                <div class="weather__temperature">
+                                    <div class="weather__temperature-img"></div>
+                                    <div class="weather__temperature-degree"></div>
+                                </div>
+                                <div class="weather__feeling">
+                                    
+                                </div>
+                                <div class="weather__forecast-items">
+                                    <div class="weather__forecast-item">
+                                        <div class="weather__forecast-title">
+                                            Скорость ветра
+                                        </div>
+                                        <div class="weather__forecast-inner">
+                                            <div class="weather__forecast-img">
+                                                <img src="images/wind.png" alt="wind">
+                                            </div>
+                                            <div class="weather__forecast-wind"></div>
+                                        </div>
+                                    </div>
+                                    <div class="weather__forecast-item">
+                                        <div class="weather__forecast-title">
+                                            Направление ветра
+                                        </div>
+                                        <div class="weather__forecast-inner">
+                                            <div class="weather__forecast-img">
+                                                <img src="images/dir-wind.png" alt="dir-wind">
+                                            </div>
+                                            <div class="weather__forecast-dirwind"></div>
+                                        </div>
+                                    </div>
+                                    <div class="weather__forecast-item">
+                                        <div class="weather__forecast-title">
+                                            Влажность
+                                        </div>
+                                        <div class="weather__forecast-inner">
+                                            <div class="weather__forecast-img">
+                                                <img src="images/hum.png" alt="humidity">
+                                            </div>
+                                            <div class="weather__forecast-humidity"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weather__smallcopy">
+                                #НеПогода
+                            </div>
+                        </div>
+                        <div class="weather__notcities">
+                            <form class="weather__form">
+                                <p>
+                                    <select class="weather__form-select" name="cities">
+                                        <option class="weather__form-item" value="Lipetsk" selected>Липецк</option>
+                                        <option class="weather__form-item" value="Lebedyan">Лебедянь</option>
+                                        <option class="weather__form-item" value="Moscow">Москва</option>
+                                        <option class="weather__form-item" value="Mokroe">Мокрое</option>
+                                        <option class="weather__form-item" value="Ufa">Уфа</option>
+                                    </select>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__text">#НеПогода</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

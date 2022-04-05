@@ -1,0 +1,196 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header {
+    background-color: #315EFB;
+    padding: 16px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-list {
+        display: flex;
+        align-items: center;
+    }
+    &__menu-item + &__menu-item {
+        margin-left: 30px;
+    }
+    &__menu-link {
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    &__user-exit {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}
+.search {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0px 18px 37px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 18px 37px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 18px 37px 1px rgba(0, 0, 0, 0.09);
+    margin-bottom: 100px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__form {
+        width: 100%;
+        position: relative;
+    }
+    &__form-input {
+        width: 100%;
+        height: 40px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 18px;
+        background-color: #E0EBFF;
+        border: none;
+    }
+    &__form-input::placeholder {
+        color: #315EFB;
+        font-weight: bold;
+    }
+    &__form-btn {
+        position: absolute;
+        content: '';
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border-radius: 20px;
+        background-color: #315efb;
+        border: none;
+    }
+    &__form-img {
+        display: block;
+        width: 21px;
+        height: 20px;
+    }
+}
+
+.weather {
+    margin-bottom: 70px;
+    &__inner {
+        display: flex;
+    }
+    &__city {
+        color: #343b4c;
+        max-width: 600px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        padding: 20px 20px;
+    }
+
+    &__city-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    &__day {
+        margin-bottom: 8px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+    &__sdelau {
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 55px;
+    }
+    &__temperature {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__temperature-img {
+        margin-right: 30px;
+    }
+    &__temperature-degree {
+        font-size: 90px;
+    }
+    &__feeling {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    &__forecast-items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__forecast-item + &__forecast-item {
+        margin-left: 30px;
+    }
+
+    &__forecast-wind, &__forecast-dirwind, &__forecast-humidity {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__forecast-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    &__forecast-title {
+        font-size: 20px;
+        color: #8d96b2;
+        margin-bottom: 30px;
+    }
+    &__forecast-inner {
+        display: flex;
+        align-items: center;
+    }
+    &__smallcopy {
+        text-align: right;
+    }
+    &__form {
+
+    }
+    &__form-select {
+        margin: 0px;
+        max-width: 300px;
+        width: 100%;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 18px;
+        outline: none;
+        border: 3px solid #e0ebff;
+        &:hover {
+            border-color: #315EFB;
+        }
+    }
+}
+
+
+
+.footer {
+    padding: 50px 0;
+    background-color: #1f2431;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+.logo-link {
+    margin-right: 30px;
+}
+
+
+@import 'media.scss';
